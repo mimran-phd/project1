@@ -1,0 +1,55 @@
+timestamp: '2025-07-11T10:37:25.678642+00:00'
+name: simple_ml_pipeline
+description: '"A simple ML pipeline with three tasks."'
+components:
+- name: fetch_data
+  type: manifest
+  manifests:
+    name: fetch_data-pod
+  requirements:
+    memory: 100Mi
+    cpu: 2
+    architecture: intel
+- name: transform_data
+  type: manifest
+  manifests:
+    name: transform_data-pod
+  requirements:
+    memory: 100Mi
+    cpu: 2
+    architecture: intel
+- name: train_model_task
+  type: manifest
+  manifests:
+    name: train_model_task-pod
+  requirements:
+    memory: 100Mi
+    cpu: 2
+    architecture: intel
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: fetch_data-pod
+spec:
+  containers:
+  - name: base
+    image: python:3.8-slim-buster
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: transform_data-pod
+spec:
+  containers:
+  - name: base
+    image: python:3.8-slim-buster
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: train_model_task-pod
+spec:
+  containers:
+  - name: base
+    image: python:3.8-slim-buster

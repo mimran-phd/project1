@@ -1,0 +1,53 @@
+{
+    "cluster": {
+        "kubernetes": {
+            "type": "None",
+            "engine": "Kubernetes",
+            "name": "kubernetes",
+            "uuid": "9a43248d-284c-4488-bda2-2b5df206b3a6",
+            "API": {},
+            "node": {
+                "k8s-ctrl": {
+                    "name": "k8s-ctrl",
+                    "type": "None",
+                    "staticMetrics": {
+                        "cpuArchitecture": "amd64",
+                        "cpuCores": 16,
+                        "RAMMemory": 42056548352
+                    },
+                    "dynamicMetrics": {
+                        "freeRAM": 31334236160,
+                        "cpuLoad": "883395995n"
+                    }
+                },
+                "k8s-node1": {
+                    "name": "k8s-node1",
+                    "type": "None",
+                    "staticMetrics": {
+                        "cpuArchitecture": "amd64",
+                        "cpuCores": 4,
+                        "RAMMemory": 20972118016
+                    },
+                    "dynamicMetrics": {
+                        "freeRAM": 18656096256,
+                        "cpuLoad": "184178327n"
+                    }
+                },
+                "k8s-node2": {
+                    "name": "k8s-node2",
+                    "type": "None",
+                    "staticMetrics": {
+                        "cpuArchitecture": "amd64",
+                        "cpuCores": 4,
+                        "RAMMemory": 20972113920
+                    },
+                    "dynamicMetrics": {
+                        "freeRAM": 16074907648,
+                        "cpuLoad": "370207436n"
+                    }
+                }
+            }
+        }
+    },
+    "timestamp": "2025-07-11T10:37:25.740585+00:00"
+}
